@@ -11,7 +11,7 @@ function avada_lang_setup() {
 }
 add_action( 'after_setup_theme', 'avada_lang_setup' );
 
-function footer_logo_widgets_init() {
+if( function_exists('register_sidebar') ) {
   register_sidebar( array(
     'name' => 'Footer logo',
     'id' => 'footer-logo-widget',
