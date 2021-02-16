@@ -10,3 +10,15 @@ function avada_lang_setup() {
 	load_child_theme_textdomain( 'Avada', $lang );
 }
 add_action( 'after_setup_theme', 'avada_lang_setup' );
+
+function footer_logo_widgets_init() {
+  register_sidebar( array(
+    'name' => 'Footer logo',
+    'id' => 'footer-logo-widget',
+    'before_widget' => '<div id="%1$s" class="footer-logo">',
+    'after_widget' => '</div>',
+  ) );
+}
+
+
+add_action('widgets_init', 'footer_logo_widgets_init');
