@@ -23,12 +23,12 @@ $c_page_id = Avada()->fusion_library->get_page_id();
 
 	<footer class="fusion-footer-widget-area fusion-widget-area<?php echo esc_attr( $footer_widget_area_center_class ); ?>">
 		<div class="fusion-row">
-			<div class="fusion-columns fusion-columns-<?php echo esc_attr( $footer_widget_columns ); ?> fusion-widget-area">
         <?php if( is_active_sidebar('footer-logo-widget') ) : ?>
           <div class="footer-logo-widget-container">
             <?php dynamic_sidebar('footer-logo-widget'); ?>
           </div>
         <?php endif; ?>
+			<div class="fusion-columns fusion-columns-<?php echo esc_attr( $footer_widget_columns ); ?> fusion-widget-area">
 				<?php
 				/**
 				 * Check the column width based on the amount of columns chosen in Global Options.
