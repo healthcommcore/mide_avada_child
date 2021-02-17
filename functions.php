@@ -19,6 +19,3 @@ if( function_exists('register_sidebar') ) {
     'after_widget' => '</div>',
   ) );
 }
-
-
-add_action('widgets_init', 'footer_logo_widgets_init');
