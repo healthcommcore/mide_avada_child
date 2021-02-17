@@ -1,6 +1,6 @@
 /*!
-Theme Name:     Avada Child Theme
-Description:    Child theme for the Avada WP Theme
+Theme Name:     MiDE Child Theme
+Description:    MiDE Child theme for the Avada WP Theme
 Author:         Health Communication Core
 Author URI:     http://www.healthcommcore.org
 Template:       Avada
@@ -9,3 +9,82 @@ Text Domain:    Avada
 */
 
 
+$body-size: 1.4rem;
+
+/* COLORS */
+$orange: #DAA820;
+$dk-navy: #0A4B69;
+$navy: #0B557D;
+
+/* FONTS */
+$fira: "fira-sans";
+$fira-cond: "fira-sans-condensed";
+$ibm: "ibm-plex-sans";
+$marine: "marine";
+$lt: 300;
+$reg: 400;
+$med: 500;
+$semi: 600;
+
+/* GLOBAL */
+html {
+  font-size: 100% !important;
+}
+
+body {
+  line-height: calc(1.4 * #{$body-size}) !important;
+  font-size: $body-size !important;
+  font-weight: $reg !important;
+}
+
+.fusion-header {
+  height: auto !important;
+}
+
+.home #main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h2 {
+  line-height: 110%;
+}
+
+/* HOME */
+html:not(.avada-has-site-width-percent) {
+  .tfs-slider .slide-content-container {
+    width: 500px;
+    background-color: $orange;
+    right: 10%;
+    padding: 30px 28px !important;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    h2 {
+      line-height: 100% !important;
+      font-size: 2.3em !important;
+    }
+    h4 {
+      font-family: $marine;
+      font-weight: $lt;
+      color: $dk-navy !important;
+      line-height: 120% !important;
+      font-size: 1.2em !important;
+    }
+    .buttons {
+      .tfs-button-1 {
+        margin-top: 8%;
+      }
+      .button-default {
+        border-radius: unset;
+        background-color: #fff;
+        .fusion-button-text {
+          color: $navy;
+          font-family: $fira-cond;
+          font-weight: $semi;
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+}
