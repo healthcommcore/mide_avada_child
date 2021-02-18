@@ -64,6 +64,9 @@ $c_page_id = Avada()->fusion_library->get_page_id();
 
 				<div class="fusion-clearfix"></div>
 			</div> <!-- fusion-columns -->
+        <?php if( is_active_sidebar('footer-menu-and-copyright') ) : ?>
+          <?php dynamic_sidebar('footer-menu-and-copyright'); ?>
+        <?php endif; ?>
 		</div> <!-- fusion-row -->
 	</footer> <!-- fusion-footer-widget-area -->
 <?php endif; // End footer wigets check. ?>

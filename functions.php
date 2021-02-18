@@ -18,4 +18,10 @@ if( function_exists('register_sidebar') ) {
     'before_widget' => '<div id="%1$s" class="footer-logo">',
     'after_widget' => '</div>',
   ) );
+  register_sidebar( array(
+    'name' => 'Footer menu and copyright',
+    'id' => 'footer-menu-and-copyright',
+    'before_widget' => '<div id="%1$s" class="footer-menu-and-copyright-container">',
+    'after_widget' => '</div>',
+  ) );
 }
