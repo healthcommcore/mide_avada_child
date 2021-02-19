@@ -50,6 +50,26 @@ h2 {
   line-height: 110%;
 }
 
+/* MAIN MENU */
+.fusion-main-menu-search-overlay {
+  .fusion-main-menu > .fusion-menu {
+    margin-top: 50px;
+  }
+}
+
+.fusion-main-menu > ul > li {
+  padding-right: 32px;
+  a {
+    font-weight: $lt !important;
+    font-size: 1.0em !important;
+    height: auto !important;
+    padding: 0 5px 10px 5px;
+  }
+}
+body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
+  top: 90%;
+}
+
 /* HOME */
 html:not(.avada-has-site-width-percent) {
   .tfs-slider .slide-content-container {
