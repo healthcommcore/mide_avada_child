@@ -14,7 +14,8 @@ $body-size: 1.4rem;
 /* COLORS */
 $orange: #DAA820;
 $dk-navy: #0A4B69;
-$navy: #0B557D;
+$navy: #046895;
+$turq: #5DE0E0;
 
 /* FONTS */
 $fira: "fira-sans";
@@ -25,6 +26,8 @@ $lt: 300;
 $reg: 400;
 $med: 500;
 $semi: 600;
+
+$content-margin: 100;
 
 /* GLOBAL */
 html {
@@ -148,6 +151,36 @@ html:not(.avada-has-site-width-percent) {
     }
   }
 }
+
+/* PAGES */
+.home .post-content {
+  margin-left: 0;
+}
+.post-content {
+  margin-left: #{$content-margin}px;
+}
+
+.fusion-page-title-bar {
+  border-top: $turq 3px solid;
+  margin-top: 80px;
+  .fusion-page-title-row {
+    height: auto;
+    h1 {
+      font-size: 1.8em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.fusion-page-title-wrapper {
+  background-color: $navy;
+  display: block;
+  height: auto;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  padding-left: #{$content-margin}px;
+}
+
 
 /* FOOTER */
 .fusion-footer footer {
