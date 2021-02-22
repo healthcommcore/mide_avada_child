@@ -11,6 +11,10 @@ function avada_lang_setup() {
 }
 add_action( 'after_setup_theme', 'avada_lang_setup' );
 
+add_image_size( 'staff-photo', 220, 300 );
+
+add_filter( 'image_size_names_choose', 'staff_photo_size' );
+
 if( function_exists('register_sidebar') ) {
   register_sidebar( array(
     'name' => 'Footer logo',
@@ -24,4 +28,10 @@ if( function_exists('register_sidebar') ) {
     'before_widget' => '<div id="%1$s" class="footer-menu-and-copyright-container">',
     'after_widget' => '</div>',
   ) );
+}
+
+function staff_photo_size( $sizes ) {
+  return array_merge( $sizes, array(
+    'staff-photo' => __('Staff photo size'),
+  ));
 }
