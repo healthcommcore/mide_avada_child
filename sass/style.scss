@@ -49,8 +49,28 @@ body {
   padding-bottom: 0;
 }
 
-h2 {
+.fusion-title-size-two, h2 {
   line-height: 110%;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.fusion-title-size-two:first-child, h2:first-child {
+  margin-top: 0;
+}
+
+.fusion-title-size-two + ul, 
+.fusion-title-size-two + ol, 
+h2 + ol, h2 + ul {
+  margin-top: 0;
+}
+
+ul, ol {
+  margin-top: -20px;
+}
+
+.post-content a {
+  text-decoration: underline;
 }
 
 /* MAIN MENU */
@@ -64,11 +84,16 @@ h2 {
   padding-right: 32px;
   a {
     font-weight: $lt !important;
-    font-size: 1.0em !important;
+    font-size: 0.9em !important;
     height: auto !important;
     padding: 0 5px 10px 5px;
   }
 }
+
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
+  line-height: 1.4em;
+}
+
 body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
   top: 90%;
 }
