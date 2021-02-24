@@ -99,11 +99,17 @@ ul, ol {
     font-size: 0.9em !important;
     height: auto !important;
     padding: 0 5px 10px 5px;
+    letter-spacing: -0.01em;
   }
+}
+
+.avada-menu-highlight-style-bottombar .fusion-main-menu .sub-menu {
+  border: $turq 1px solid;
 }
 
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
   line-height: 1.4em;
+  font-family: $fira-cond;
 }
 
 body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
