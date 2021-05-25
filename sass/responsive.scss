@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @media (max-width: 800px) and (min-width: 401px) {
   .tfs-slider, 
   .fusion-slider-container {
@@ -7,23 +9,43 @@
 }
 
 @media (max-width: 800px) {
+  body {
+    font-size: $body-size-mobile !important;
+  }
   ol, ul {
     padding-left: 30px;
   }
+  #main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+/* MAIN MENU */
+  .fusion-body .fusion-mobile-nav-holder > ul,
+  .fusion-body .fusion-mobile-nav-holder .fusion-selector-down,
+  body:not(.mobile-menu-design-flyout) .fusion-mobile-nav-item a,
+  .fusion-mobile-selector .fusion-selector-down::before,
+  .fusion-mobile-nav-item .fusion-open-submenu,
+  .fusion-mobile-selector {
+    border-color: $navy;
+    color: $navy;
+  }
+  body:not(.mobile-menu-design-flyout) .fusion-mobile-nav-item a:hover,
+  body:not(.mobile-menu-design-flyout) .fusion-mobile-current-nav-item a {
+    background-color: $lt-blue;
+  }
+  .fusion-mobile-nav-item a {
+    font-size: 1.2em;
+  }
+
+  .fusion-mobile-nav-holder > ul > li.fusion-mobile-nav-item > a {
+    font-size: 1.3em;
+  }
+
+/* HOME */
   .fusion-body .fusion-flex-container.fusion-builder-row-6 {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
   }
-/*
-  html:not(.avada-has-site-width-percent),
-  html:not(.avada-is-100-percent-template) {
-    .fusion-wrapper #main.width-100,
-    .fusion-wrapper #main {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-  }
-*/
   .fusion-builder-row {
     .fusion-builder-column-6 > .fusion-column-wrapper {
       margin-left: 0 !important;
@@ -40,7 +62,7 @@
           margin-bottom: 0;
         }
         .fusion-title h2 {
-          font-size: 1.8em !important;
+          font-size: 2.0em !important;
         }
         .buttons {
           a {
@@ -134,6 +156,45 @@
     text-align: center;
     a img {
       display: inline-block;
+    }
+  }
+
+/* INSIDE */
+  .fusion-page-title-bar {
+    border: none;
+    margin-top: 30px;
+    padding: 0;
+    .fusion-page-title-row {
+      h1 {
+        font-size: 1.3em;
+      }
+    }
+  }
+  html:not(.avada-has-site-width-percent) .fusion-page-title-bar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fusion-page-title-wrapper {
+    padding: 20px 30px 14px 30px;
+  }
+  .post-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .post-content h2,
+  h2 {
+    font-size: 1.3em !important;
+  }
+  .post-content h3,
+  h3 {
+    font-size: 1.16em !important;
+  }
+  .abcfslItemCntrLst {
+    .abcfslImgCntrLst img {
+      margin-bottom: 20px;
+    }
+    .abcfslPadLPc3 {
+      padding-left: 0;
     }
   }
 }
