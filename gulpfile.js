@@ -1,7 +1,7 @@
 'use strict';
 
 const dir = {
-  src : 'sass/style.scss',
+  src : 'sass/*.scss',
   build: './'
 };
 
@@ -36,10 +36,10 @@ const watch = () => {
     proxy: "mide.dr809.test",
     browser: "firefox"
   });
-  gulp.watch(dir.src, clean).on('change', browsersync.reload);
   /*
-  gulp.watch(dir.src, clean);
+  gulp.watch(dir.src, clean).on('change', browsersync.reload);
   */
+  gulp.watch(dir.src, clean);
 }
 
 const build = gulp.parallel(clean, watch);
