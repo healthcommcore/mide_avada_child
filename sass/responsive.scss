@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-@media (max-width: 800px) and (min-width: 451px) {
+@media (max-width: 800px) and (min-width: 641px) {
   .tfs-slider, 
   .fusion-slider-container {
     height: auto !important;
@@ -199,7 +199,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 640px) {
   .fusion-slider-container {
     .tfs-slider {
       .background-image {
