@@ -238,9 +238,16 @@ h2 + .abcfslGridCntr {
   }
 }
 
+/* Sitemap */
+.wsp-container {
+  ul li ul {
+    margin-top: 0 !important;
+  }
+}
+
 /* FOOTER */
 .fusion-footer footer {
-  .footer-logo-widget-container {
+  .footer-menu-and-copyright-container {
     text-align: center;
     .aligncenter {
       display: inline-block;
@@ -265,8 +272,8 @@ h2 + .abcfslGridCntr {
 		font-weight: 400;
 }
 
-.footer-menu-and-legal a:hover {
-    color: #ccc;
+.fusion-footer-widget-area ul li a:hover {
+    color: $navy;
 }
 
 .footer-menu-and-legal .footer-menu {
